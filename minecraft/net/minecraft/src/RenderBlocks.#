@@ -1,0 +1,27 @@
+***************
+*** 1972,1983 ****
+          tessellator.func_35835_b(block.func_35275_c(field_1772_a, i, j, k));
+          int i1 = block.func_207_d(field_1772_a, i, j, k);
+          float f1 = (float)(i1 >> 16 & 0xff) / 255F;
+-         double d = (float)(i1 >> 8 & 0xff) / 255F;
+          float f2 = (float)(i1 & 0xff) / 255F;
+-         tessellator.func_987_a(f * f1, f * d, f * f2);
+          i1 = (l & 0xf) << 4;
+          f1 = l & 0xf0;
+-         d = (float)i1 / 256F;
+          double d1 = ((float)i1 + 15.99F) / 256F;
+          double d2 = (float)f1 / 256F;
+          double d3 = ((float)f1 + 15.99F) / 256F;
+--- 1972,1983 ----
+          tessellator.func_35835_b(block.func_35275_c(field_1772_a, i, j, k));
+          int i1 = block.func_207_d(field_1772_a, i, j, k);
+          float f1 = (float)(i1 >> 16 & 0xff) / 255F;
++         float da = (float)(i1 >> 8 & 0xff) / 255F;
+          float f2 = (float)(i1 & 0xff) / 255F;
++         tessellator.func_987_a(f * f1, f * da, f * f2);
+          i1 = (l & 0xf) << 4;
+          f1 = l & 0xf0;
++         double d = (float)i1 / 256F;
+          double d1 = ((float)i1 + 15.99F) / 256F;
+          double d2 = (float)f1 / 256F;
+          double d3 = ((float)f1 + 15.99F) / 256F;

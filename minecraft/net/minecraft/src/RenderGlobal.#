@@ -1,0 +1,80 @@
+***************
+*** 841,851 ****
+          GL11.glEnable(3553);
+          GL11.glBlendFunc(770, 1);
+          GL11.glPushMatrix();
+-         double d = 1.0F - field_1448_k.func_27162_g(f);
+          float f8 = 0.0F;
+          float f10 = 0.0F;
+          float f13 = 0.0F;
+-         GL11.glColor4f(1.0F, 1.0F, 1.0F, d);
+          GL11.glTranslatef(f8, f10, f13);
+          GL11.glRotatef(-90F, 0.0F, 1.0F, 0.0F);
+          GL11.glRotatef(field_1448_k.func_619_c(f) * 360F, 1.0F, 0.0F, 0.0F);
+--- 841,851 ----
+          GL11.glEnable(3553);
+          GL11.glBlendFunc(770, 1);
+          GL11.glPushMatrix();
++         float da = 1.0F - field_1448_k.func_27162_g(f);
+          float f8 = 0.0F;
+          float f10 = 0.0F;
+          float f13 = 0.0F;
++         GL11.glColor4f(1.0F, 1.0F, 1.0F, da);
+          GL11.glTranslatef(f8, f10, f13);
+          GL11.glRotatef(-90F, 0.0F, 1.0F, 0.0F);
+          GL11.glRotatef(field_1448_k.func_619_c(f) * 360F, 1.0F, 0.0F, 0.0F);
+***************
+*** 859,867 ****
+          tessellator1.func_982_a();
+          f16 = 20F;
+          GL11.glBindTexture(3553, field_1447_l.func_1070_a("/terrain/moon_phases.png"));
+-         float f19 = field_1448_k.func_40475_d(f);
+-         int l = f19 % 4;
+-         int i1 = (f19 / 4) % 2;
+          float f25 = (float)(l + 0) / 4F;
+          float f26 = (float)(i1 + 0) / 2.0F;
+          float f27 = (float)(l + 1) / 4F;
+--- 859,867 ----
+          tessellator1.func_982_a();
+          f16 = 20F;
+          GL11.glBindTexture(3553, field_1447_l.func_1070_a("/terrain/moon_phases.png"));
++         int f19a = field_1448_k.func_40475_d(f);
++         int l = f19a % 4;
++         int i1 = (f19a / 4) % 2;
+          float f25 = (float)(l + 0) / 4F;
+          float f26 = (float)(i1 + 0) / 2.0F;
+          float f27 = (float)(l + 1) / 4F;
+***************
+*** 873,879 ****
+          tessellator1.func_983_a(-f16, -100D, -f16, f27, f26);
+          tessellator1.func_982_a();
+          GL11.glDisable(3553);
+-         f19 = field_1448_k.func_679_f(f) * d;
+          if(f19 > 0.0F)
+          {
+              GL11.glColor4f(f19, f19, f19, f19);
+--- 873,879 ----
+          tessellator1.func_983_a(-f16, -100D, -f16, f27, f26);
+          tessellator1.func_982_a();
+          GL11.glDisable(3553);
++         float f19 = field_1448_k.func_679_f(f) * da;
+          if(f19 > 0.0F)
+          {
+              GL11.glColor4f(f19, f19, f19, f19);
+***************
+*** 886,892 ****
+          GL11.glPopMatrix();
+          GL11.glDisable(3553);
+          GL11.glColor3f(0.0F, 0.0F, 0.0F);
+-         d = field_1439_t.field_6322_g.func_427_e(f).field_1775_b - 63D;
+          if(d < 0.0D)
+          {
+              GL11.glPushMatrix();
+--- 886,892 ----
+          GL11.glPopMatrix();
+          GL11.glDisable(3553);
+          GL11.glColor3f(0.0F, 0.0F, 0.0F);
++         double d = field_1439_t.field_6322_g.func_427_e(f).field_1775_b - 63D;
+          if(d < 0.0D)
+          {
+              GL11.glPushMatrix();
